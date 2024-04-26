@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Animal Crossing New Horizons Creature Guide | Fish </title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="images/favicon.ico">
+        <script 
+        src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous"></script>
+        <script src="animals-script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img src="images/acnh-leaf.png" alt="animal crossing leaf icon" width="50px"></a>
+            <a href="index.html"><h1>Creature Guide</h1></a>
+            <nav>
+                <!-- <input type="checkbox" id="dropdown">
+                <label for="dropdown">
+                    <span>
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"></path> <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"></path> <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"></path> </g></svg>
+                    </span>
+                </label> -->
+                <ul>
+                    <li>
+                        <a href="fish.html">Fish</a>
+                    </li>
+                    <li>
+                        <a href="insects.html">Insects</a>
+                    </li>
+                    <li>
+                        <a href="sea.html">Sea Creatures</a>
+                    </li>
+                </ul>
+                <a href="#top">^</a>
+            </nav>
+        </header>
+        <h2>Search all available fish</h2>
+        <div class="search">
+            <label for="site-search">Find a fish</label>
+            <input type="search" id="site-search" placeholder="Find a fish">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search searchIcon" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#C4D9A9" fill="#F5F5DC" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="10" cy="10" r="7" />
+                <line x1="21" y1="21" x2="15" y2="15" />
+            </svg>
+        </div>
+        <div id="fish-cont">
+            <!-- Creature images from https://nookipedia.com/ -->
+            <section id="pond">
+                <h2>Pond Fish</h2>
+                <div class="fish">
+                    <h3>Carp</h3>
+                    <p>This fish is located in ponds and has a large shadow.</p>
+                    <img src="images/fish/pond/Carp_NH.png" alt="carp acnh" class="creatureImg">
+                    <img src="images/fish/pond/carpChart.png" alt="Availability chart for Carp" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="carp" value="Carp">
+                        <label for="carp">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Catfish</h3>
+                    <p>This fish is located in ponds and has a large shadow.</p>
+                    <img src="images/fish/pond/Catfish_NH.png" alt="catfish acnh" class="creatureImg">
+                    <img src="images/fish/pond/catfishChart.png" alt="Availability chart for Catfish" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="catfish" value="Catfish">
+                        <label for="catfish">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Crawfish</h3>
+                    <p>This fish is located in ponds and has a small shadow.</p>
+                    <img src="images/fish/pond/Crawfish_NH.png" alt="crawfish acnh" class="creatureImg">
+                    <img src="images/fish/pond/crawfishChart.png" alt="Availability chart for Crawfish" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="crawfish" value="Crawfish">
+                        <label for="crawfish">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Frog</h3>
+                    <p>This fish is located in ponds and has a small shadow.</p>
+                    <img src="images/fish/pond/Frog_NH.png" alt="frog acnh" class="creatureImg">
+                    <img src="images/fish/pond/frogChart.png" alt="Availability chart for Frog" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="frog" value="Frog">
+                        <label for="frog">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Gar</h3>
+                    <p>This fish is located in ponds and has a very large shadow.</p>
+                    <img src="images/fish/pond/Gar_NH.png" alt="gar acnh" class="creatureImg">
+                    <img src="images/fish/pond/garChart.png" alt="Availability chart for Gar" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="gar" value="Gar">
+                        <label for="gar">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Giant Snakehead</h3>
+                    <p>This fish is located in ponds and has a large shadow.</p>
+                    <img src="images/fish/pond/Giant_Snakehead_NH.png" alt="giant snakehead acnh" class="creatureImg">
+                    <img src="images/fish/pond/giantSnakeheadChart.png" alt="Availability chart for Giant Snakehead" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="giantSnakehead" value="GiantSnakehead">
+                        <label for="giantSnakehead">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Goldfish</h3>
+                    <p>This fish is located in ponds and has a tiny shadow.</p>
+                    <img src="images/fish/pond/Goldfish_NH.png" alt="goldfish acnh" class="creatureImg">
+                    <img src="images/fish/pond/goldfishChart.png" alt="Availability chart for Goldfish" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="goldfish" value="Goldfish">
+                        <label for="goldfish">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Killifish</h3>
+                    <p>This fish is located in ponds and has a tiny shadow.</p>
+                    <img src="images/fish/pond/Killifish_NH.png" alt="killifish acnh" class="creatureImg">
+                    <img src="images/fish/pond/killifishChart.png" alt="Availability chart for Killifish" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="killifish" value="Killifish">
+                        <label for="killifish">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Koi</h3>
+                    <p>This fish is located in ponds and has a large shadow.</p>
+                    <img src="images/fish/pond/Koi_NH.png" alt="koi acnh" class="creatureImg">
+                    <img src="images/fish/pond/koiChart.png" alt="Availability chart for Koi Chart" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="koi" value="Koi">
+                        <label for="koi">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Pop-Eyed Goldfish</h3>
+                    <p>This fish is located in ponds and has a tiny shadow.</p>
+                    <img src="images/fish/pond/Pop-Eyed_Goldfish_NH.png" alt="pop-eyed goldfish acnh" class="creatureImg">
+                    <img src="images/fish/pond/popEyedGoldfishChart.png" alt="Availability chart for Pop-Eyed Goldfish" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="popEyedGoldfish" value="PopEyedGoldfish">
+                        <label for="popEyedGoldfish">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Ranchu Goldfish</h3>
+                    <p>This fish is located in ponds and has a small shadow.</p>
+                    <img src="images/fish/pond/Ranchu_Goldfish_NH.png" alt="ranchu goldfish acnh" class="creatureImg">
+                    <img src="images/fish/pond/ranchuGoldfishChart.png" alt="Availability chart for Ranchu Goldfish" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="ranchuGoldfish" value="RanchuGoldfish">
+                        <label for="ranchuGoldfish">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Tadpole</h3>
+                    <p>This fish is located in ponds and has a tiny shadow.</p>
+                    <img src="images/fish/pond/Tadpole_NH.png" alt="tadpole acnh" class="creatureImg">
+                    <img src="images/fish/pond/tadpoleChart.png" alt="Availability chart for Tadpole" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="tadpole" value="Tadpole">
+                        <label for="tadpole">Mark as caught</label>
+                    </div>
+                </div>
+            </section>
+            <section id="river">
+                <h2>River Fish</h2>
+                <!-- <div></div> -->
+                <div class="fish">
+                    <h3>Angelfish</h3>
+                    <p>This fish is located in rivers and has a small shadow.</p>
+                    <img src="images/fish/river/Angelfish_NH.png" alt="angelfish acnh" class="creatureImg">
+                    <img src="images/fish/river/angelfishChart.png" alt="Availability chart for Angelfish" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="angelfish" value="Angelfish">
+                        <label for="angelfish">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Arapaima</h3>
+                    <p>This fish is located in rivers and has a huge shadow.</p>
+                    <img src="images/fish/river/Arapaima_NH.png" alt="arapaima acnh" class="creatureImg">
+                    <img src="images/fish/river/arapaimaChart.png" alt="Availability chart for Arapaima" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="arapaima" value="Arapaima">
+                        <label for="arapaima">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Arowana</h3>
+                    <p>This fish is located in rivers and has a large shadow.</p>
+                    <img src="images/fish/river/Arowana_NH.png" alt="arowana acnh" class="creatureImg">
+                    <img src="images/fish/river/arowanaChart.png" alt="Arowana" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="arowana" value="Arowana">
+                        <label for="arowana">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Betta</h3>
+                    <p>This fish is located in rivers and has a small shadow.</p>
+                    <img src="images/fish/river/Betta_NH.png" alt="betta acnh" class="creatureImg">
+                    <img src="images/fish/river/bettaChart.png" alt="Availability chart for Beta" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="betta" value="Betta">
+                        <label for="betta">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Bitterling</h3>
+                    <p>This fish is found in rivers and has a tiny shadow.</p>
+                    <img src="images/fish/river/Bitterling_NH.png" alt="bitterling acnh" class="creatureImg">
+                    <img src="images/fish/river/bitterlingChart.png" alt="Availability chart for Bitterling" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="bitterling" value="Bitterling">
+                        <label for="bitterling">Mark as caught</label>
+                </div>
+                </div>
+                <div class="fish">
+                    <h3>Black Bass</h3>
+                    <p>This fish is located in the river and has a large shadow.</p>
+                    <img src="images/fish/river/Black_Bass_NH.png" alt="black bass acnh" class="creatureImg">
+                    <img src="images/fish/river/blackBassChart.png" alt="Availability chart for Black Bass" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="blackBass" value="BlackBass">
+                        <label for="blackBass">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Bluegill</h3>
+                    <p>This fish is located in rivers and has a small shadow.</p>
+                    <img src="images/fish/river/Bluegill_NH.png" alt="bluegill acnh" class="creatureImg">
+                    <img src="images/fish/river/bluegillChart.png" alt="Availability chart for Bluegill" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="bluegill" value="Bluegill">
+                        <label for="bluegill">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Boot</h3>
+                    <p>This is found in rivers and seas and has a medium shadow.</p>
+                    <img src="images/fish/river/Boot_NH_Inv_Icon.png" alt="boot acnh" class="creatureImg">
+                    <img src="images/fish/river/bootChart.png" alt="Availability chart for Boot" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="boot1" value="Boot">
+                        <label for="boot1">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Char</h3>
+                    <p>This fish is located in clifftop rivers and has a medium shadow.</p>
+                    <img src="images/fish/river/Char_NH.png" alt="char acnh" class="creatureImg">
+                    <img src="images/fish/river/charChart.png" alt="Availability chart for Char" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="char" value="Char">
+                        <label for="char">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Cherry Salmon</h3>
+                    <p>This fish is located in clifftop rivers and has a medium shadow.</p>
+                    <img src="images/fish/river/Cherry_Salmon_NH.png" alt="cherry salmaon acnh" class="creatureImg">
+                    <img src="images/fish/river/cherrySalmonChart.png" alt="Availability chart for Cherry Salmon" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="cherrySalmon" value="CherrySalmon">
+                        <label for="cherrySalmon">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Crucian Carp</h3>
+                    <p>This fish is located in rivers and has a small shadow.</p>
+                    <img src="images/fish/river/Crucian_Carp_NH.png" alt="crucian carp acnh" class="creatureImg">
+                    <img src="images/fish/river/crucianCarpChart.png" alt="Availability chart for Crucian Carp" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="crucianCarp" value="CrucianCarp">
+                        <label for="crucianCarp">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Dace</h3>
+                    <p>This fish is located in rivers and has a medium shadow.</p>
+                    <img src="images/fish/river/Dace_NH.png" alt="dace acnh" class="creatureImg">
+                    <img src="images/fish/river/daceChart.png" alt="Availability chart for Dace" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="dace" value="Dace">
+                        <label for="dace">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Dorado</h3>
+                    <p>This fish is located in rivers and has a very large shadow.</p>
+                    <img src="images/fish/river/Dorado_NH.png" alt="dorado acnh" class="creatureImg">
+                    <img src="images/fish/river/doradoChart.png" alt="Availability chart for Dorado" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="dorado" value="Dorado">
+                        <label for="dorado">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Empty Can</h3>
+                    <p>This is found in rivers and seas and has a small shadow.</p>
+                    <img src="images/fish/river/Empty_Can_NH_Inv_Icon.png" alt="empty can acnh" class="creatureImg">
+                    <img src="images/fish/river/emptyCanChart.png" alt="Availability chart for Empty Can" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="emptyCan1" value="EmptyCan">
+                        <label for="emptyCan1">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Freshwater Goby</h3>
+                    <p>This fish is located in rivers and has a small shadow.</p>
+                    <img src="images/fish/river/Freshwater_Goby_NH.png" alt="freshwater goby acnh" class="creatureImg">
+                    <img src="images/fish/river/freshwaterGobyChart.png" alt="Availability chart for Freshwater Goby" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="freshwaterGoby" value="FreshwaterGoby">
+                        <label for="freshwaterGoby">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Golden Trout</h3>
+                    <p>This fish is located in clifftop rivers and has a medium shadow.</p>
+                    <img src="images/fish/river/Golden_Trout_NH.png" alt="golden trout acnh" class="creatureImg">
+                    <img src="images/fish/river/goldenTroutChart.png" alt="Availability chart for Golden Trout" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="goldenTrout" value="GoldenTrout">
+                        <label for="goldenTrout">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Guppy</h3>
+                    <p>This fish is located in rivers and has a tiny shadow.</p>
+                    <img src="images/fish/river/Guppy_NH.png" alt="guppy" class="creatureImg">
+                    <img src="images/fish/river/guppyChart.png" alt="Availability chart for Guppy" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="guppy" value="Guppy">
+                        <label for="guppy">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>King Salmon</h3>
+                    <p>This fish is found in river mouths and has a very large shadow.</p>
+                    <img src="images/fish/river/King_Salmon_NH.png" alt="king salmon acnh" class="creatureImg">
+                    <img src="images/fish/river/kingSalmonChart.png" alt="Availability chart for King Salmon" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="kingSalmon" value="KingSalmon">
+                        <label for="kingSalmon">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Loach</h3>
+                    <p>This fish is located in rivers and has a small shadow.</p>
+                    <img src="images/fish/river/Loach_NH.png" alt="loach acnh" class="creatureImg">
+                    <img src="images/fish/river/loachChart.png" alt="Availability chart for Loach" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="loach" value="Loach">
+                        <label for="loach">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Mitten Crab</h3>
+                    <p>This crab is found in rivers and has a small shadow.</p>
+                    <img src="images/fish/river/Mitten_Crab_NH.png" alt="mitten crab acnh" class="creatureImg">
+                    <img src="images/fish/river/mittenCrabChart.png" alt="Availability chart for Mitten Crab" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="mittenCrab" value="MittenCrab">
+                        <label for="mittenCrab">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Neon Tetra</h3>
+                    <p>This fish is located in rivers and has a tiny shadow.</p>
+                    <img src="images/fish/river/Neon_Tetra_NH.png" alt="neon tetra acnh" class="creatureImg">
+                    <img src="images/fish/river/neonTetraChart.png" alt="Availability chart for Neon Tetra" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="neonTetra" value="NeonTetra">
+                        <label for="neonTetra">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Nibble Fish</h3>
+                    <p>This fish is located in rivers and has a tiny shadow.</p>
+                    <img src="images/fish/river/Nibble_Fish_NH.png" alt="nibble fish acnh" class="creatureImg">
+                    <img src="images/fish/river/nibbleFishChart.png" alt="Availability chart for Nibble Fish" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="nibbleFish" value="NibbleFish">
+                        <label for="nibbleFish">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Old Tire</h3>
+                    <p>This is found in rivers and seas and has a large shadow.</p>
+                    <img src="images/fish/river/Old_Tire_NH_Inv_Icon.png" alt="old tire acnh" class="creatureImg">
+                    <img src="images/fish/river/oldTireChart.png" alt="Availability chart for Old Tire" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="oldTire1" value="OldTire">
+                        <label for="oldTire1">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Pale Chub</h3>
+                    <p>This fish is located in rivers and has a tiny shadow.</p>
+                    <img src="images/fish/river/Pale_Chub_NH.png" alt="pale chub acnh" class="creatureImg">
+                    <img src="images/fish/river/paleChubChart.png" alt="Availability chart for Pale Chub" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="paleChub" value="PaleChub">
+                        <label for="paleChub">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Pike</h3>
+                    <p>This fish is found in rivers and has a very large shadow.</p>
+                    <img src="images/fish/river/Pike_NH.png" alt="pike acnh" class="creatureImg">
+                    <img src="images/fish/river/pikeChart.png" alt="Availability chart for Pike" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="pike" value="Pike">
+                        <label for="pike">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Piranha</h3>
+                    <p>This fish is located in rivers and has a small shadow.</p>
+                    <img src="images/fish/river/Piranha_NH.png" alt="piranha acnh" class="creatureImg">
+                    <img src="images/fish/river/piranhaChart.png" alt="Availability chart for Piranha" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="piranha" value="Piranha">
+                        <label for="piranha">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Pond Smelt</h3>
+                    <p>This fish is found in rivers and has a small shadow.</p>
+                    <img src="images/fish/river/Pond_Smelt_NH.png" alt="pond smelt acnh" class="creatureImg">
+                    <img src="images/fish/river/pondSmeltChart.png" alt="Availability chart for Pond Smelt" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="pondSmelt" value="PondSmelt">
+                        <label for="pondSmelt">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Rainbow Fish</h3>
+                    <p>This fish is located in rivers and has a tiny shadow.</p>
+                    <img src="images/fish/river/Rainbowfish_NH.png" alt="rainbow fish acnh" class="creatureImg">
+                    <img src="images/fish/river/rainbowFishChart.png" alt="Availability chart for Rainbow Fish" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="rainbowFish" value="RainbowFish">
+                        <label for="rainbowFish">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Saddled Bichir</h3>
+                    <p>This fish is located in rivers and has a large shadow.</p>
+                    <img src="images/fish/river/Saddled_Bichir_NH.png" alt="saddled Bichir acnh" class="creatureImg">
+                    <img src="images/fish/river/saddledBichirChart.png" alt="Availability chart for Saddled Bichir Chart" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="saddledBichir" value="SaddledBichir">
+                        <label for="saddledBichir">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Salmon</h3>
+                    <p>This fish is found in river mouths and has a large shadow.</p>
+                    <img src="images/fish/river/Salmon_NH.png" alt="salmon acnh" class="creatureImg">
+                    <img src="images/fish/river/salmonChart.png" alt="Availability chart for Salmon Chart" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="salmon" value="Salmon">
+                        <label for="salmon">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Snapping Turtle</h3>
+                    <p>This fish is located in rivers and has a large shadow.</p>
+                    <img src="images/fish/river/Snapping_Turtle_NH.png" alt="snapping turtle acnh" class="creatureImg">
+                    <img src="images/fish/river/snappingTurtleChart.png" alt="Availability chart for Snapping Turtle" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="snappingTurtle" value="SnappingTurtle">
+                        <label for="snappingTurtle">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Soft-Shelled Turtle</h3>
+                    <p>This fish is found in rivers and has a large shadow.</p>
+                    <img src="images/fish/river/Soft-Shelled_Turtle_NH.png" alt="soft-shelled turtle acnh" class="creatureImg">
+                    <img src="images/fish/river/softShelledTurtleChart.png" alt="Availability chart for Soft-Shelled Turtle" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="softShelledTurtle" value="SoftShelledTurtle">
+                        <label for="softShelledTurtle">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Stone</h3>
+                    <p>Can be found in rivers and seas. Stones have a small shadow.</p>
+                    <img src="images/fish/river/Stone_NH_Icon.png" alt="stone" class="creatureImg">
+                    <img src="images/fish/river/stoneChart.png" alt="Availability chart for Stone" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="stone1" value="Stone">
+                        <label for="stone1">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Stringfish</h3>
+                    <p>This fish is found in clifftop rivers and has a very large shadow.</p>
+                    <img src="images/fish/river/Stringfish_NH.png" alt="stringfish" class="creatureImg">
+                    <img src="images/fish/river/stringfishChart.png" alt="Availability chart for Stringfish" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="stringfish" value="Stringfish">
+                        <label for="stringfish">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Sturgeon</h3>
+                    <p>This fish is found in river mouths and has a huge shadow.</p>
+                    <img src="images/fish/river/Sturgeon_NH.png" alt="sturgeon acnh" class="creatureImg">
+                    <img src="images/fish/river/sturgeonChart.png" alt="Availability chart for Sturgeon" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="sturgeon" value="Sturgeon">
+                        <label for="sturgeon">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Sweetfish</h3>
+                    <p>This fish is located in rivers and has a medium shadow.</p>
+                    <img src="images/fish/river/Sweetfish_NH.png" alt="sweetfish" class="creatureImg">
+                    <img src="images/fish/river/sweetfishChart.png" alt="Sweetfish" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="sweetfish" value="Sweetfish">
+                        <label for="sweetfish">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Tilapia</h3>
+                    <p>This fish is located in rivers and has a medium shadow.</p>
+                    <img src="images/fish/river/Tilapia_NH.png" alt="tilapia acnh" class="creatureImg">
+                    <img src="images/fish/river/tilapiaChart.png" alt="Availability chart for Tilapia" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="tilapia" value="Tilapia">
+                        <label for="tilapia">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Yellow Perch</h3>
+                    <p>This fish is found in rivers and has a medium shadow.</p>
+                    <img src="images/fish/river/Yellow_Perch_NH.png" alt="yellow perch acnh" class="creatureImg">
+                    <img src="images/fish/river/yellowPerchChart.png" alt="Availability chart for Yellow Perch" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="yellowPerch" value="YellowPerch">
+                        <label for="yellowPerch">Mark as caught</label>
+                    </div>
+                </div>
+            </section>
+            <section id="sea">
+                <h2>Sea Fish</h2>
+                <div class="fish">
+                    <h3>Anchovy</h3>
+                    <p>This fish is located in the sea and has a small shadow.</p>
+                    <img src="images/fish/sea/Anchovy_(Fish)_NH.png" alt="anchovy acnh" class="creatureImg">
+                    <img src="images/fish/sea/anchovyChart.png" alt="Availability chart for Anchovy" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="anchovy" value="Anchovy">
+                        <label for="anchovy">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Barred Knifejaw</h3>
+                    <p>This fish is located in the sea and has a medium shadow.</p>
+                    <img src="images/fish/sea/Barred_Knifejaw_NH.png" alt="barred knifejaw acnh" class="creatureImg">
+                    <img src="images/fish/sea/barredKnifeJawChart.png" alt="Availability chart for Barred Knifejaw" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="barredKnifejaw" value="BarredKnifejaw">
+                        <label for="barredKnifejaw">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Barreleye</h3>
+                    <p>This fish is located in the sea and has a small shadow.</p>
+                    <img src="images/fish/sea/Barreleye_NH.png" alt="barreleye acnh" class="creatureImg">
+                    <img src="images/fish/sea/barreleyeChart.png" alt="Availability chart for Barreleye" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="barreleye" value="Barreleye">
+                        <label for="barreleye">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Blowfish</h3>
+                    <p>his fish is located in the sea and has a medium shadow.</p>
+                    <img src="images/fish/sea/Blowfish_NH.png" alt="blowfish acnh" class="creatureImg">
+                    <img src="images/fish/sea/blowfishChart.png" alt="Availability chart for Blowfish" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="blowfish" value="Blowfish">
+                        <label for="blowfish">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Blue Marlin</h3>
+                    <p>This fish is a pier fish and has a huge shadow.</p>
+                    <img src="images/fish/sea/Blue_Marlin_NH.png" alt="blue marlin acnh" class="creatureImg">
+                    <img src="images/fish/sea/blueMarlinChart.png" alt="Availability chart for Blue Marlin" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="blueMarlin" value="BlueMarlin">
+                        <label for="blueMarlin">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Boot</h3>
+                    <p>This is found in rivers and seas and has a medium shadow.</p>
+                    <img src="images/fish/river/Boot_NH_Inv_Icon.png" alt="boot acnh" class="creatureImg">
+                    <img src="images/fish/sea/bootChart.png" alt="Availability chart for Boot" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="boot2" value="Boot">
+                        <label for="boot2">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Butterly Fish</h3>
+                    <p>This fish is located in the sea and has a small shadow.</p>
+                    <img src="images/fish/sea/Butterfly_Fish_NH.png" alt="butterfly fish acnh" class="creatureImg">
+                    <img src="images/fish/sea/butterflyFishChart.png" alt="Availability chart for Butterly Fish" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="butterflyFish" value="ButterflyFish">
+                        <label for="butterflyFish">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Clownfish</h3>
+                    <p>This fish is located in sea and has a tiny shadow.</p>
+                    <img src="images/fish/sea/Clown_Fish_NH.png" alt="clownfish acnh" class="creatureImg">
+                    <img src="images/fish/sea/clownFishChart.png" alt="Availability chart for Clownfish" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="clownfish" value="Clownfish">
+                        <label for="clownfish">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Coelacanth</h3>
+                    <p>This fish is located in the sea and has a huge shadow. It can only be found when it's raining.</p>
+                    <img src="images/fish/sea/Coelacanth_NH.png" alt="coelacanth acnh" class="creatureImg">
+                    <img src="images/fish/sea/coelacanthChart.png" alt="Availability chart for Coelacanth" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="coelacanth" value="Coelacanth">
+                        <label for="coelacanth">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Dab</h3>
+                    <p>This fish is located in the sea and has a medium shadow.</p>
+                    <img src="images/fish/sea/Dab_NH.png" alt="dab acnh" class="creatureImg">
+                    <img src="images/fish/sea/dabChart.png" alt="Availability chart for Dab" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="dab" value="Dab">
+                        <label for="dab">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Empty Can</h3>
+                    <p>This is found in rivers and seas and has a small shadow.</p>
+                    <img src="images/fish/river/Empty_Can_NH_Inv_Icon.png" alt="empty can acnh" class="creatureImg">
+                    <img src="images/fish/sea/emptyCanChart.png" alt="Availability chart for Empty Can" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="emptyCan2" value="EmptyCan">
+                        <label for="emptyCan2">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Football Fish</h3>
+                    <p>his fish is located in the sea and has a large shadow.</p>
+                    <img src="images/fish/sea/Football_Fish_NH.png" alt="football fish acnh" class="creatureImg">
+                    <img src="images/fish/sea/footballFishChart.png" alt="Availability chart for Football Fish" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="footballFish" value="FootballFish">
+                        <label for="footballFish">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Giant Trevally</h3>
+                    <p>This pier fish is located in the sea and has a very large shadow.</p>
+                    <img src="images/fish/sea/Giant_Trevally_NH.png" alt="giant trevally acnh" class="creatureImg">
+                    <img src="images/fish/sea/giantTrevallyChart.png" alt="Availability chart for Giant Trevally" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="giantTrevally" value="GiantTrevally">
+                        <label for="giantTrevally">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Great White Shark</h3>
+                    <p>This shark is located in the sea and has a very large (finned) shadow.</p>
+                    <img src="images/fish/sea/Great_White_Shark_NH.png" alt="great white shark acnh" class="creatureImg">
+                    <img src="images/fish/sea/greatWhiteShark.png" alt="Availability chart for Great White Shark" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="greatWhiteShark" value="GreatWhiteShark">
+                        <label for="greatWhiteShark">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Hammerhead Shark</h3>
+                    <p>This shark is located in the sea and has a very large (finned) shadow.</p>
+                    <img src="images/fish/sea/Hammerhead_Shark_NH.png" alt="hammerhead shark acnh" class="creatureImg">
+                    <img src="images/fish/sea/hammerheadSharkChart.png" alt="Availability chart for Hammerhead Shark" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="hammerheadShark" value="HammerheadShark">
+                        <label for="hammerheadShark">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Horse Mackerel</h3>
+                    <p>This fish is located in the sea and has a small shadow.</p>
+                    <img src="images/fish/sea/Horse_Mackerel_NH.png" alt="horse mackerel acnh" class="creatureImg">
+                    <img src="images/fish/sea/horseMackerelChart.png" alt="Availability chart for Horse Mackerel" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="horseMackerel" value="HorseMackerel">
+                        <label for="horseMackerel">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Mahi-Mahi</h3>
+                    <p>This pier fish is located in the sea and has a very large shadow.</p>
+                    <img src="images/fish/sea/Mahi-Mahi_NH.png" alt="mahi-mahi acnh" class="creatureImg">
+                    <img src="images/fish/sea/mahiMahiChart.png" alt="Availability chart for Mahi Mahi" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="mahiMahi" value="MahiMahi">
+                        <label for="mahiMahi">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Moray Eel</h3>
+                    <p>his fish is located in the sea and has a long shadow.</p>
+                    <img src="images/fish/sea/Moray_Eel_NH.png" alt="moray eel acnh" class="creatureImg">
+                    <img src="images/fish/sea/morayEelChart.png" alt="Availability chart for Moray Eel" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="morayEel" value="MorayEel">
+                        <label for="morayEel">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Napoleonfish</h3>
+                    <p>This fish is located in the sea and has a huge shadow.</p>
+                    <img src="images/fish/sea/Napoleonfish_NH.png" alt="napoleonfish acnh" class="creatureImg">
+                    <img src="images/fish/sea/napoleonfishChart.png" alt="Availability chart for Napoleonfish" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="napoleonfish" value="Napoleonfish">
+                        <label for="napoleonfish">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Oarfish</h3>
+                    <p>This fish is located in the sea and has a huge shadow.</p>
+                    <img src="images/fish/sea/Oarfish_NH.png" alt="oarfish acnh" class="creatureImg">
+                    <img src="images/fish/sea/oarfishChart.png" alt="Availability chart for Oarfish" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="oarfish" value="Oarfish">
+                        <label for="oarfish">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Ocean Sunfish</h3>
+                    <p>This fish is located in the sea and has a very large (finned) shadow.</p>
+                    <img src="images/fish/sea/Ocean_Sunfish_NH.png" alt="ocean Sunfish acnh" class="creatureImg">
+                    <img src="images/fish/sea/oceanSunfishChart.png" alt="Availability chart for Ocean Sunfish" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="oceanSunfish" value="OceanSunfish">
+                        <label for="oceanSunfish">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Old Tire</h3>
+                    <p>This is found in rivers and seas and has a large shadow.</p>
+                    <img src="images/fish/river/Old_Tire_NH_Inv_Icon.png" alt="old Tire acnh" class="creatureImg">
+                    <img src="images/fish/sea/oldTireChart.png" alt="Availability chart for Old Tire" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="oldTire2" value="OldTire">
+                        <label for="oldTire2">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Olive Flounder</h3>
+                    <p>This fish is located in the sea and has a very large shadow.</p>
+                    <img src="images/fish/sea/Olive_Flounder_NH.png" alt="olive Flounder acnh" class="creatureImg">
+                    <img src="images/fish/sea/oliveFlounderChart.png" alt="Availability chart for Olive Flounder" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="oliveFlounder" value="OliveFlounder">
+                        <label for="oliveFlounder">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Pufferfish</h3>
+                    <p>This fish is located in the sea and has a medium shadow.</p>
+                    <img src="images/fish/sea/Puffer_Fish_NH.png" alt="pufferfish acnh" class="creatureImg">
+                    <img src="images/fish/sea/pufferFishChart.png" alt="Availability chart for Pufferfish" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="pufferfish" value="Pufferfish">
+                        <label for="pufferfish">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Ray</h3>
+                    <p>his fish is located in the sea and has a very large shadow.</p>
+                    <img src="images/fish/sea/Ray_NH.png" alt="ray acnh" class="creatureImg">
+                    <img src="images/fish/sea/rayChart.png" alt="Availability chart for Ray" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="ray" value="Ray">
+                        <label for="ray">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Red Snapper</h3>
+                    <p>This fish is located in the sea and has a large shadow.</p>
+                    <img src="images/fish/sea/Red_Snapper_NH.png" alt="red Snapper acnh" class="creatureImg">
+                    <img src="images/fish/sea/redSnapperChart.png" alt="Availability chart for Red Snapper" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="redSnapper" value="RedSnapper">
+                        <label for="redSnapper">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Ribbon Eel</h3>
+                    <p>This fish is located in the sea and has a long shadow.</p>
+                    <img src="images/fish/sea/Ribbon_Eel_NH.png" alt="ribbon Eel acnh" class="creatureImg">
+                    <img src="images/fish/sea/ribbonEelChart.png" alt="Availability chart for Ribbon Eel" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="ribbonEel" value="RibbonEel">
+                        <label for="ribbonEel">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Saw Shark</h3>
+                    <p>This shark is located in the sea and has a very large (finned) shadow.</p>
+                    <img src="images/fish/sea/Saw_Shark_NH.png" alt="saw Shark acnh" class="creatureImg">
+                    <img src="images/fish/sea/sawSharkChart.png" alt="Availability chart for Saw Shark" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="sawShark" value="SawShark">
+                        <label for="sawShark">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Sea Bass</h3>
+                    <p>This fish is located in the sea and has a very large shadow.</p>
+                    <img src="images/fish/sea/Sea_Bass_NH.png" alt="sea Bass acnh" class="creatureImg">
+                    <img src="images/fish/sea/seaBassChart.png" alt="Availability chart for Sea Bass" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="seaBass" value="SeaBass">
+                        <label for="seaBass">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Sea Butterfly</h3>
+                    <p>his fish is located in the sea and has a tiny shadow.</p>
+                    <img src="images/fish/sea/Sea_Butterfly_NH.png" alt="sea Butterfly acnh" class="creatureImg">
+                    <img src="images/fish/sea/seaButterflyChart.png" alt="Availability chart for Sea Butterfly" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="seaButterfly" value="SeaButterfly">
+                        <label for="seaButterfly">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Seahorse</h3>
+                    <p>This fish is located in the sea and has a tiny shadow.</p>
+                    <img src="images/fish/sea/Sea_Horse_NH.png" alt="seahorse acnh" class="creatureImg">
+                    <img src="images/fish/sea/seaHorseChart.png" alt="Availability chart for Seahorse" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="seahorse" value="Seahorse">
+                        <label for="seahorse">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Squid</h3>
+                    <p>This fish is located in the sea and has a medium shadow.</p>
+                    <img src="images/fish/sea/Squid_NH.png" alt="squid acnh" class="creatureImg">
+                    <img src="images/fish/sea/squidChart.png" alt="Availability chart for Squid" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="squid" value="Squid">
+                        <label for="squid">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Stone</h3>
+                    <p>Can be found in rivers and seas. Stones have a small shadow.</p>
+                    <img src="images/fish/river/Stone_NH_Icon.png" alt="stone acnh" class="creatureImg">
+                    <img src="images/fish/sea/stoneChart.png" alt="Availability chart for Stone" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="stone2" value="Stone">
+                        <label for="stone2">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Suckerfish</h3>
+                    <p>This fish is located in the sea and has a very large (finned) shadow.</p>
+                    <img src="images/fish/sea/Suckerfish_NH.png" alt="suckerfish acnh" class="creatureImg">
+                    <img src="images/fish/sea/suckerfishChart.png" alt="Availability chart for Suckerfish" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="suckerfish" value="Suckerfish">
+                        <label for="suckerfish">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Surgeonfish</h3>
+                    <p>This fish is located in the sea and has a small shadow.</p>
+                    <img src="images/fish/sea/Surgeonfish_NH.png" alt="surgeonfish acnh" class="creatureImg">
+                    <img src="images/fish/sea/surgeonfishChart.png" alt="Availability chart for Surgeonfish" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="surgeonfish" value="Surgeonfish">
+                        <label for="surgeonfish">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Tuna</h3>
+                    <p>This is a pier fish located in the sea and has a huge shadow.</p>
+                    <img src="images/fish/sea/Tuna_NH.png" alt="tuna acnh" class="creatureImg">
+                    <img src="images/fish/sea/tunaChart.png" alt="Availability chart for Tuna" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="tuna" value="Tuna">
+                        <label for="tuna">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Whale Shark</h3>
+                    <p>This shark is located in the sea and has a very large (finned) shadow.</p>
+                    <img src="images/fish/sea/Whale_Shark_NH.png" alt="whale Shark acnh" class="creatureImg">
+                    <img src="images/fish/sea/whaleSharkChart.png" alt="Availability chart for Whale Shark" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="whaleShark" value="WhaleShark">
+                        <label for="whaleShark">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="fish">
+                    <h3>Zebra Turkeyfish</h3>
+                    <p>This fish is located in the sea and has a medium shadow.</p>
+                    <img src="images/fish/sea/Zebra_Turkeyfish_NH.png" alt="zebra Turkeyfish acnh" class="creatureImg">
+                    <img src="images/fish/sea/zebraTurkeyfishChart.png" alt="Availability chart for Zebra Turkeyfish" class="availabilityCh">
+                    <div class="check">
+                        <input type="checkbox" id="zebraTurkeyfish" value="ZebraTurkeyfish">
+                        <label for="zebraTurkeyfish">Mark as caught</label>
+                    </div>
+                </div>
+                <div class="warning noResultsHidden">
+                    <p>No results found. Please try another search.</p>
+                </div>
+            </section>
+            
+        </div>
+        <footer>
+            <p><small>&copy;2024</small></p>
+            <p><small>For educational purposes only</small></p>
+        </footer>
+    </body>
+</html>

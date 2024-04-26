@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Animal Crossing New Horizons Creature Guide | Insects </title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="images/favicon.ico">
+        <script 
+        src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous"></script>
+        <script src="animals-script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img src="images/acnh-leaf.png" alt="animal crossing leaf icon" width="50px"></a>
+            <a href="index.html"><h1>Creature Guide</h1></a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="fish.html">Fish</a>
+                    </li>
+                    <li>
+                        <a href="insects.html">Insects</a>
+                    </li>
+                    <li>
+                        <a href="sea.html">Sea Creatures</a>
+                    </li>
+                </ul>
+                <a href="#top">^</a>
+            </nav>
+        </header>
+        <h2>Search all available insects</h2>
+        <div class="search">
+            <label for="site-search">Find an insect</label>
+            <input type="search" id="site-search" placeholder="Find an insect">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search searchIcon" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#C4D9A9" fill="#F5F5DC" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="10" cy="10" r="7" />
+                <line x1="21" y1="21" x2="15" y2="15" />
+            </svg>
+        </div>
+        <div id="insect-cont">
+            <div class="insect">
+                <h3>Agrias Butterfly</h3>
+                <p>This insect can be found flying near flowers.</p>
+                <img src="images/insects/Agrias_Butterfly_NH.png" alt="agrias Butterfly acnh" class="creatureImg">
+                <img src="images/insects/agriasButterflyChart.png" alt="Availability chart for agrias butterfly" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="agriasButterfly" value="AgriasButterfly">
+                    <label for="agriasButterfly">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Ant</h3>
+                <p>This insect can be found on spoiled turnips/candy/lollipops.</p>
+                <img src="images/insects/Ant_NH.png" alt="ant acnh" class="creatureImg">
+                <img src="images/insects/antChart.png" alt="availability chart for ant" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="ant" value="Ant">
+                    <label for="ant">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Atlas Moth</h3>
+                <p>This insect can be found on any kind of tree. Sneak up slowly, they spook easily!</p>
+                <img src="images/insects/Atlas_Moth_NH.png" alt="atlas Moth acnh" class="creatureImg">
+                <img src="images/insects/atlasMothChart.png" alt="availability chart for atlas moth" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="atlasMoth" value="AtlasMoth">
+                    <label for="atlasMoth">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Bagworm</h3>
+                <p>This insect can be found by shaking hardwood and cedar trees.</p>
+                <img src="images/insects/Bagworm_NH.png" alt="bagworm acnh" class="creatureImg">
+                <img src="images/insects/bagwormChart.png" alt="availability chart for bagworm" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="bagworm" value="Bagworm">
+                    <label for="bagworm">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Banded Dragonfly</h3>
+                <p>This insect will be found flying near water.</p>
+                <img src="images/insects/Banded_Dragonfly_NH.png" alt="banded Dragonfly acnh" class="creatureImg">
+                <img src="images/insects/bandedDragonflyChart.png" alt="availability chart for banded dragonfly" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="bandedDragonfly" value="BandedDragonfly">
+                    <label for="bandedDragonfly">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Bell Cricket</h3>
+                <p>This insect can be found on the ground and will not be out in the rain.</p>
+                <img src="images/insects/Bell_Cricket_NH.png" alt="bell Cricket acnh" class="creatureImg">
+                <img src="images/insects/bellCricketChart.png" alt="availability chart for bell cricket" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="bellCricket" value="BellCricket">
+                    <label for="bellCricket">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Blue Weevil Beetle</h3>
+                <p>This insect will be found on palm trees.</p>
+                <img src="images/insects/Blue_Weevil_Beetle_NH.png" alt="blue Weevil Beetle acnh" class="creatureImg">
+                <img src="images/insects/blueWeevilBeetleChart.png" alt="availability chart for blue weevil beetle" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="blueWeevilBeetle" value="BlueWeevilBeetle">
+                    <label for="blueWeevilBeetle">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Brown Cicada</h3>
+                <p>This insect will be found on hardwood and cedar trees.</p>
+                <img src="images/insects/Brown_Cicada_NH.png" alt="brown Cicada acnh" class="creatureImg">
+                <img src="images/insects/brownCicadaChart.png" alt="availability chart for brown cicada" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="brownCicada" value="BrownCicada">
+                    <label for="brownCicada">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Centipede</h3>
+                <p>Can be found by hitting rocks.</p>
+                <img src="images/insects/Centipede_NH.png" alt="centipede acnh" class="creatureImg">
+                <img src="images/insects/centipedeChart.png" alt="availability chart for centipede" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="centipede" value="Centipede">
+                    <label for="centipede">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Cicada Shell</h3>
+                <p>This will be found on hardwood and cedar trees.</p>
+                <img src="images/insects/Cicada_Shell_NH.png" alt="cicada Shell acnh" class="creatureImg">
+                <img src="images/insects/cicadaShellChart.png" alt="availability chart for cicada shell" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="cicadaShell" value="CicadaShell">
+                    <label for="cicadaShell">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Citrus Long-Horned Beetle</h3>
+                <p>This insect can be found on tree stumps.</p>
+                <img src="images/insects/Citrus_Long-Horned_Beetle_NH.png" alt="citrus long-horned beetle acnh" class="creatureImg">
+                <img src="images/insects/citrusLongHornBeetle.png" alt="availability chart for citrus long horned beetle" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="citrusLongHornedBeetle" value="CitrusLongHornedBeetle">
+                    <label for="citrusLongHornedBeetle">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Common Bluebottle</h3>
+                <p>This butterfly will be flying all around your island.</p>
+                <img src="images/insects/Common_Bluebottle_NH.png" alt="common Bluebottle acnh" class="creatureImg">
+                <img src="images/insects/commonBluebottleChart.png" alt="availability chart for common bluebottle" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="commonBluebottle" value="CommonBluebottle">
+                    <label for="commonBluebottle">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Common Butterfly</h3>
+                <p>This butterfly will be flying all around your island.</p>
+                <img src="images/insects/Common_Butterfly_NH.png" alt="common Butterfly acnh" class="creatureImg">
+                <img src="images/insects/commonButterflyChart.png" alt="availability chart for common butterfly" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="commonButterfly" value="CommonButterfly">
+                    <label for="commonButterfly">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Cricket</h3>
+                <p>This insect will be found on the grass and will not be found when it's raining.</p>
+                <img src="images/insects/Cricket_NH.png" alt="cricket acnh" class="creatureImg">
+                <img src="images/insects/cricketChart.png" alt="availability chart for cricket" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="cricket" value="Cricket">
+                    <label for="cricket">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Cyclommatus Stag</h3>
+                <p>This insect will be found on palm trees.</p>
+                <img src="images/insects/Cyclommatus_Stag_NH.png" alt="cyclommatus Stag acnh" class="creatureImg">
+                <img src="images/insects/cyclommatusStagChart.png" alt="availability chart for Cyclommatus Stag" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="cyclommatusStag" value="CyclommatusStag">
+                    <label for="cyclommatusStag">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Damselfly</h3>
+                <p>This insect will be found flying near water.</p>
+                <img src="images/insects/Damselfly_NH.png" alt="damselfly acnh" class="creatureImg">
+                <img src="images/insects/damselflyChart.png" alt="availability chart for Damselfly" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="damselfly" value="Damselfly">
+                    <label for="damselfly">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Darner Dragonfly</h3>
+                <p>This insect will be found flying near water. They move quickly!</p>
+                <img src="images/insects/Darner_Dragonfly_NH.png" alt="darner Dragonfly acnh" class="creatureImg">
+                <img src="images/insects/darnerDragonflyChart.png" alt="availability chart for Darner Dragonfly" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="darnerDragonfly" value="DarnerDragonfly">
+                    <label for="darnerDragonfly">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Diving Beetle</h3>
+                <p>This insect will be found on rivers and ponds.</p>
+                <img src="images/insects/Diving_Beetle_NH.png" alt="diving Beetle acnh" class="creatureImg">
+                <img src="images/insects/divingBeetleChart.png" alt="availability chart for Diving Beetle" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="divingBeetle" value="DivingBeetle">
+                    <label for="divingBeetle">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Drone Beetle</h3>
+                <p>This insect will be found on any kind of tree.</p>
+                <img src="images/insects/Drone_Beetle_NH.png" alt="drone Beetle acnh" class="creatureImg">
+                <img src="images/insects/droneBeetleChart.png" alt="availability chart for Drone Beetle" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="droneBeetle" value="DroneBeetle">
+                    <label for="droneBeetle">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Dung Beetle</h3>
+                <p>This insect will be found on the ground pushing snowballs.</p>
+                <img src="images/insects/Dung_Beetle_NH.png" alt="dung Beetle acnh" class="creatureImg">
+                <img src="images/insects/dungBeetleChart.png" alt="availability chart for Dung Beetle" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="dungBeetle" value="DungBeetle">
+                    <label for="dungBeetle">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Earth-Boring Dung Beetle</h3>
+                <p>This insect will be found on the ground.</p>
+                <img src="images/insects/Earth-Boring_Dung_Beetle_NH.png" alt="earth-Boring Dung Beetle acnh" class="creatureImg">
+                <img src="images/insects/earthBoringDungBeetleChart.png" alt="availability chart for Earth-Boring Dung Beetle" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="earthBoringDungBeetle" value="EarthBoringDungBeetle">
+                    <label for="earthBoringDungBeetle">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Emperor Butterfly</h3>
+                <p>This butterfly will be found flying near flowers.</p>
+                <img src="images/insects/Emperor_Butterfly_NH.png" alt="emperor Butterfly acnh" class="creatureImg">
+                <img src="images/insects/emperorButterflyChart.png" alt="availability chart for Emperor Butterfly" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="emperorButterfly" value="EmperorButterfly">
+                    <label for="emperorButterfly">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Flea</h3>
+                <p>Fleas are found on villagers. They will look like they are in distress - swing your net at them to catch a flea.</p>
+                <img src="images/insects/Flea_NH.png" alt="flea acnh" class="creatureImg">
+                <img src="images/insects/feaChart.png" alt="availability chart for Flea" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="flea" value="Flea">
+                    <label for="flea">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Firefly</h3>
+                <p>This insect will be found flying near water.</p>
+                <img src="images/insects/Firefly_NH.png" alt="firefly acnh" class="creatureImg">
+                <img src="images/insects/fireflyChart.png" alt="availability chart for Firefly" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="firefly" value="Firefly">
+                    <label for="firefly">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Fly</h3>
+                <p>Flies will be found near trash or rotten turnips.</p>
+                <img src="images/insects/Fly_NH.png" alt="fly acnh" class="creatureImg">
+                <img src="images/insects/flyChart.png" alt="availability chart for Fly" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="fly" value="Fly">
+                    <label for="fly">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Giant Cicada</h3>
+                <p>This insect can be found on hardwood or cedar trees.</p>
+                <img src="images/insects/Giant_Cicada_NH.png" alt="giant Cicada acnh" class="creatureImg">
+                <img src="images/insects/giantCicadaChart.png" alt="availability chart for Giant Cicada" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="giantCicada" value="GiantCicada">
+                    <label for="giantCicada">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Giant Stag</h3>
+                <p>This insect can be found on trees of any kind.</p>
+                <img src="images/insects/Giant_Stag_NH.png" alt="giant Stag acnh" class="creatureImg">
+                <img src="images/insects/giantStagChart.png" alt="availability chart for Giant Stag" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="giantStag" value="GiantStag">
+                    <label for="giantStag">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Giant Water Bug</h3>
+                <p>This insect will be found on rivers or ponds and will glide around.</p>
+                <img src="images/insects/Giant_Water_Bug_NH.png" alt="giantWaterBug acnh" class="creatureImg">
+                <img src="images/insects/giantWaterBugChart.png" alt="availability chart for Giant Water Bug" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="giantWaterBug" value="GiantWaterBug">
+                    <label for="giantWaterBug">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Giraffe Stag</h3>
+                <p>This insect will be found on palm trees.</p>
+                <img src="images/insects/Giraffe_Stag_NH.png" alt="giraffe Stag acnh" class="creatureImg">
+                <img src="images/insects/giraffeStagChart.png" alt="availability chart for Giraffe Stag" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="giraffeStag" value="GiraffeStag">
+                    <label for="giraffeStag">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Golden Stag</h3>
+                <p>This insect will be found on palm trees. Careful, they spook easily!</p>
+                <img src="images/insects/Golden_Stag_NH.png" alt="golden Stag acnh" class="creatureImg">
+                <img src="images/insects/goldenStagChart.png" alt="availability chart for Golden Stag" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="goldenStag" value="GoldenStag">
+                    <label for="goldenStag">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Goliath Beetle</h3>
+                <p>This insect will be found on palm trees.</p>
+                <img src="images/insects/Goliath_Beetle_NH.png" alt="goliath Beetle acnh" class="creatureImg">
+                <img src="images/insects/goliathBeetleChart.png" alt="availability chart for Goliath Beetle" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="goliathBeetle" value="GoliathBeetle">
+                    <label for="goliathBeetle">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Grasshopper</h3>
+                <p>This insect will be found on the ground.</p>
+                <img src="images/insects/Grasshopper_NH.png" alt="grasshopper acnh" class="creatureImg">
+                <img src="images/insects/grasshopperChart.png" alt="availability chart for Grasshopper" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="grasshopper" value="Grasshopper">
+                    <label for="grasshopper">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Great Purple Emperor</h3>
+                <p>This butterfly will be found flying near flowers.</p>
+                <img src="images/insects/Great_Purple_Emperor_NH.png" alt="great Purple Emperor acnh" class="creatureImg">
+                <img src="images/insects/greatPurpleEmperorChart.png" alt="availability chart for Great Purple Emperor" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="greatPurpleEmperor" value="GreatPurpleEmperor">
+                    <label for="greatPurpleEmperor">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Hermit Crab</h3>
+                <p>These are found on the shoreline disquised as seashells. As you approach, they will tremble until they pop out and start walking away.</p>
+                <img src="images/insects/Hermit_Crab_NH.png" alt="hermit Crab acnh" class="creatureImg">
+                <img src="images/insects/hermitCrabChart.png" alt="availability chart for Hermit Crab" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="hermitCrab" value="HermitCrab">
+                    <label for="hermitCrab">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Honeybee</h3>
+                <p>This insect will be found flying near flowers.</p>
+                <img src="images/insects/Honeybee_NH.png" alt="honeybee acnh" class="creatureImg">
+                <img src="images/insects/honeybeeChart.png" alt="availability chart for Honeybee" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="honeybee" value="Honeybee">
+                    <label for="honeybee">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Horned Atlas</h3>
+                <p>This insect can be found on palm trees.</p>
+                <img src="images/insects/Horned_Atlas_NH.png" alt="horned Atlas acnh" class="creatureImg">
+                <img src="images/insects/hornedAtlasChart.png" alt="availability chart for Horned Atlas" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="hornedAtlas" value="HornedAtlas">
+                    <label for="hornedAtlas">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Horned Dynastid</h3>
+                <p>This insect can be found on trees of any kind.</p>
+                <img src="images/insects/Horned_Dynastid_NH.png" alt="horned Dynastid acnh" class="creatureImg">
+                <img src="images/insects/hornedDynastidChart.png" alt="availability chart for Horned Dynastid" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="hornedDynastid" value="HornedDynastid">
+                    <label for="hornedDynastid">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Horned Elephant</h3>
+                <p>This insect can be found on palm trees.</p>
+                <img src="images/insects/Horned_Elephant_NH.png" alt="horned Elephant acnh" class="creatureImg">
+                <img src="images/insects/hornedElephantChart.png" alt="availability chart for Horned Elephant" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="hornedElephant" value="HornedElephant">
+                    <label for="hornedElephant">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Horned Hercules</h3>
+                <p>This insect can be found on palm trees.</p>
+                <img src="images/insects/Horned_Hercules_NH.png" alt="horned Hercules acnh" class="creatureImg">
+                <img src="images/insects/hornedHerculesChart.png" alt="availability chart for Horned Hercules" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="hornedHercules" value="HornedHercules">
+                    <label for="hornedHercules">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Jewel Beetle</h3>
+                <p>This insect will be found on tree stumps.</p>
+                <img src="images/insects/Jewel_Beetle_NH.png" alt="jewel Beetle acnh" class="creatureImg">
+                <img src="images/insects/jewelBeetleChart.png" alt="availability chart for Jewel Beetle" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="jewelBeetle" value="JewelBeetle">
+                    <label for="jewelBeetle">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Ladybug</h3>
+                <p>This insect will be found on flowers.</p>
+                <img src="images/insects/Ladybug_NH.png" alt="ladybug acnh" class="creatureImg">
+                <img src="images/insects/ladybugChart.png" alt="availability chart for Ladybug" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="ladybug" value="ladybug">
+                    <label for="ladybug">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Long Locust</h3>
+                <p>This insect will be found on the ground.</p>
+                <img src="images/insects/Long_Locust_NH.png" alt="long Locust acnh" class="creatureImg">
+                <img src="images/insects/longLocustChart.png" alt="availability chart for Long Locust" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="longLocust" value="LongLocust">
+                    <label for="longLocust">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Madagascan Sunset Moth</h3>
+                <p>This insect will be found flying near flowers.</p>
+                <img src="images/insects/Madagascan_Sunset_Moth_NH.png" alt="madagascan Sunset Moth acnh" class="creatureImg">
+                <img src="images/insects/madagascanSunsetMothChart.png" alt="availability chart for Madagascan Sunset Moth" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="madagascanSunsetMoth" value="MadagascanSunsetMoth">
+                    <label for="madagascanSunsetMoth">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Man-Faced Stinkbug</h3>
+                <p>This insect will be found on flowers.</p>
+                <img src="images/insects/Man-Faced_Stink_Bug_NH.png" alt="man-Faced Stinkbug acnh" class="creatureImg">
+                <img src="images/insects/manFacedStinkBug.png" alt="availability chart for Man-Faced Stinkbug" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="manFacedStinkbug" value="ManFacedStinkbug">
+                    <label for="manFacedStinkbug">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Mantis</h3>
+                <p>This insect will be found on flowers.</p>
+                <img src="images/insects/Mantis_NH.png" alt="mantis acnh" class="creatureImg">
+                <img src="images/insects/mantisChart.png" alt="availability chart for Mantis" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="mantis" value="Mantis">
+                    <label for="mantis">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Migratory Locust</h3>
+                <p>This insect can be found on the ground.</p>
+                <img src="images/insects/Migratory_Locust_NH.png" alt="migratory Locust acnh" class="creatureImg">
+                <img src="images/insects/migratoryLocustChart.png" alt="availability chart for Migratory Locust" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="migratoryLocust" value="MigratoryLocust">
+                    <label for="migratoryLocust">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Miyama Stag</h3>
+                <p>This insect can be found on any kind of tree.</p>
+                <img src="images/insects/Miyama_Stag_NH.png" alt="miyama Stag acnh" class="creatureImg">
+                <img src="images/insects/miyamaStagChart.png" alt="availability chart for Miyama Stag" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="miyamaStag" value="MiyamaStag">
+                    <label for="miyamaStag">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Mole Cricket</h3>
+                <p>This insect will be found underground. As you walk around you may hear a chirping sound. Get as close to the source as you can and start digging!</p>
+                <img src="images/insects/Mole_Cricket_NH.png" alt="mole Cricket acnh" class="creatureImg">
+                <img src="images/insects/moleCricketChart.png" alt="availability chart for Mole Cricket" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="moleCricket" value="MoleCricket">
+                    <label for="moleCricket">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Monarch Butterfly</h3>
+                <p>This butterfly can be found flying near flowers.</p>
+                <img src="images/insects/Monarch_Butterfly_NH.png" alt="monarch Butterfly acnh" class="creatureImg">
+                <img src="images/insects/monarchChart.png" alt="availability chart for Monarch Butterfly" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="monarchButterfly" value="MonarchButterfly">
+                    <label for="monarchButterfly">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Mosquito</h3>
+                <p>This insect can be found flying around your character.</p>
+                <img src="images/insects/Mosquito_NH.png" alt="mosquito acnh" class="creatureImg">
+                <img src="images/insects/mosquitoChart.png" alt="availability chart for Mosquito" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="mosquito" value="Mosquito">
+                    <label for="mosquito">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Moth</h3>
+                <p>This insect will be found flying near light sources.</p>
+                <img src="images/insects/Moth_NH.png" alt="moth acnh" class="creatureImg">
+                <img src="images/insects/mothChart.png" alt="availability chart for Moth" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="moth" value="Moth">
+                    <label for="moth">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Orchid Mantis</h3>
+                <p>This insect is only found on white flowers.</p>
+                <img src="images/insects/Orchid_Mantis_NH.png" alt="orchid Mantis acnh" class="creatureImg">
+                <img src="images/insects/orchidMantisChart.png" alt="availability chart for Orchid Mantis" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="orchidMantis" value="OrchidMantis">
+                    <label for="orchidMantis">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Paper Kite Butterfly</h3>
+                <p>This butterfly will be found flying near flowers.</p>
+                <img src="images/insects/Paper_Kite_Butterfly_NH.png" alt="paper Kite Butterfly acnh" class="creatureImg">
+                <img src="images/insects/paperKiteButterflyChart.png" alt="availability chart for Paper Kite Butterfly" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="paperKiteButterfly" value="PaperKiteButterfly">
+                    <label for="paperKiteButterfly">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Peacock Butterfly</h3>
+                <p>This butterfly will be found flying near blue, purple, or black flowers.</p>
+                <img src="images/insects/Peacock_Butterfly_NH.png" alt="peacock Butterfly acnh" class="creatureImg">
+                <img src="images/insects/peacockButterflyChart.png" alt="availability chart for Peacock Butterfly" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="peacockButterfly" value="PeacockButterfly">
+                    <label for="peacockButterfly">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Pill Bug</h3>
+                <p>This insect will be found by hitting rocks.</p>
+                <img src="images/insects/Pill_Bug_NH.png" alt="pill Bug acnh" class="creatureImg">
+                <img src="images/insects/pillBugChart.png" alt="availability chart for Pill Bug" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="pillBug" value="PillBug">
+                    <label for="pillBug">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Pondskater</h3>
+                <p>This insect can be found on rivers and ponds.</p>
+                <img src="images/insects/Pondskater_NH.png" alt="pondskater acnh" class="creatureImg">
+                <img src="images/insects/pondskaterChart.png" alt="availability chart for Pondskater" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="pondskater" value="Pondskater">
+                    <label for="pondskater">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Queen Alexandra Birdwing</h3>
+                <p>This insect can be found flying near flowers.</p>
+                <img src="images/insects/Queen_Alexandra's_Birdwing_NH.png" alt="queen Alexandra Birdwing acnh" class="creatureImg">
+                <img src="images/insects/queenAlexandraBirdwingChart.png" alt="availability chart for Queen Alexandra Birdwing" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="queenAlexandraBirdwing" value="QueenAlexandraBirdwing">
+                    <label for="queenAlexandraBirdwing">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Rainbow Stag</h3>
+                <p>This insect can be found on trees of any kind.</p>
+                <img src="images/insects/Rainbow_Stag_NH.png" alt="rainbow Stag acnh" class="creatureImg">
+                <img src="images/insects/rainbowStagChart.png" alt="availability chart for Rainbow Stag" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="rainbowStag" value="RainbowStag">
+                    <label for="rainbowStag">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Rajah Brooke's Birdwing</h3>
+                <p>This butterfly will be found flying near flowers.</p>
+                <img src="images/insects/Rajah_Brooke's_Birdwing_NH.png" alt="rajah Brookes Birdwing acnh" class="creatureImg">
+                <img src="images/insects/rajahBrookesBirdwingChart.png" alt="availability chart for Rajah Brookes Birdwing" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="rajahBrookesBirdwing" value="RajahBrookesBirdwing">
+                    <label for="rajahBrookesBirdwing">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Red Dragonfly</h3>
+                <p>This insect can be found flying near water.</p>
+                <img src="images/insects/Red_Dragonfly_NH.png" alt="red Dragonfly acnh" class="creatureImg">
+                <img src="images/insects/redDragonflyChart.png" alt="availability chart for Red Dragonfly" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="redDragonfly" value="RedDragonfly">
+                    <label for="redDragonfly">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Rice Grasshopper</h3>
+                <p>This insect can be found on the ground.</p>
+                <img src="images/insects/Rice_Grasshopper_NH.png" alt="rice Grasshopper acnh" class="creatureImg">
+                <img src="images/insects/riceGrasshopperChart.png" alt="availability chart for Rice Grasshopper" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="riceGrasshopper" value="RiceGrasshopper">
+                    <label for="riceGrasshopper">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Robust Cicada</h3>
+                <p>This insect can be found on hardwood or cedar trees.</p>
+                <img src="images/insects/Robust_Cicada_NH.png" alt="robust Cicada acnh" class="creatureImg">
+                <img src="images/insects/robustCicadaChart.png" alt="availability chart for Robust Cicada" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="robustCicada" value="RobustCicada">
+                    <label for="robustCicada">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Rosalia Batesi Beetle</h3>
+                <p>This insect can be found on tree stumps.</p>
+                <img src="images/insects/Rosalia_Batesi_Beetle_NH.png" alt="rosalia Batesi Beetle acnh" class="creatureImg">
+                <img src="images/insects/rosaliaBatesiBeetleChart.png" alt="availability chart for Rosalia Batesi Beetle" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="rosaliaBatesiBeetle" value="RosaliaBatesiBeetle">
+                    <label for="rosaliaBatesiBeetle">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Saw Stag</h3>
+                <p>This insect can be found on any kind of tree.</p>
+                <img src="images/insects/Saw_Stag_NH.png" alt="saw Stag acnh" class="creatureImg">
+                <img src="images/insects/sawStagChart.png" alt="availability chart for Saw Stag" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="sawStag" value="SawStag">
+                    <label for="sawStag">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Scarab Beetle</h3>
+                <p>This insect can be found on any kind of tree.</p>
+                <img src="images/insects/Scarab_Beetle_NH.png" alt="scarab Beetle acnh" class="creatureImg">
+                <img src="images/insects/scarabBeetleChart.png" alt="availability chart for Scarab Beetle" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="scarabBeetle" value="ScarabBeetle">
+                    <label for="scarabBeetle">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Scorpion</h3>
+                <p>These will be found on the ground. Be careful approaching them - if they touch you, you will faint.</p>
+                <img src="images/insects/Scorpion_NH.png" alt="scorpion acnh" class="creatureImg">
+                <img src="images/insects/scorpionChart.png" alt="availability chart for Scorpion" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="scorpion" value="scorpion">
+                    <label for="scorpion">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Snail</h3>
+                <p>Snails will be found on rocks and bushes. They spawn more on rainy days.</p>
+                <img src="images/insects/Snail_NH.png" alt="snail acnh" class="creatureImg">
+                <img src="images/insects/snailChart.png" alt="availability chart for Snail" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="snail" value="Snail">
+                    <label for="snail">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Spider</h3>
+                <p>Spiders will be found by shaking hardwood or cedar trees.</p>
+                <img src="images/insects/Spider_NH.png" alt="spider acnh" class="creatureImg">
+                <img src="images/insects/spiderChart.png" alt="availability chart for Spider" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="spider" value="Spider">
+                    <label for="spider">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Stinkbug</h3>
+                <p>This butterfly will be found on flowers.</p>
+                <img src="images/insects/Stinkbug_NH.png" alt="stinkbug acnh" class="creatureImg">
+                <img src="images/insects/stinkbugChart.png" alt="availability chart for Stinkbug" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="stinkbug" value="Stinkbug">
+                    <label for="stinkbug">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Tarantula</h3>
+                <p>These will be found on the ground. Be careful approaching them - if they touch you, you will faint.</p>
+                <img src="images/insects/Tarantula_NH.png" alt="tarantula acnh" class="creatureImg">
+                <img src="images/insects/tarantulaChart.png" alt="availability chart for Tarantula" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="tarantula" value="tarantula">
+                    <label for="tarantula">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Tiger Beetle</h3>
+                <p>These insects will be found on the ground.</p>
+                <img src="images/insects/Tiger_Beetle_NH.png" alt="tiger Beetle acnh" class="creatureImg">
+                <img src="images/insects/tigerBeetleChart.png" alt="availability chart for Tiger Beetle" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="tigerBeetle" value="TigerBeetle">
+                    <label for="tigerBeetle">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Tiger Butterfly</h3>
+                <p>These butterflies will be found flying all around your island.</p>
+                <img src="images/insects/Tiger_Butterfly_NH.png" alt="tiger Butterfly acnh" class="creatureImg">
+                <img src="images/insects/tigerButterflyChart.png" alt="availability chart for Tiger Butterfly" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="tigerButterfly" value="TigerButterfly">
+                    <label for="tigerButterfly">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Violin Beetle</h3>
+                <p>This insect can be found on tree stumps.</p>
+                <img src="images/insects/Violin_Beetle_NH.png" alt="violin Beetle acnh" class="creatureImg">
+                <img src="images/insects/violinBeetleChart.png" alt="availability chart for Violin Beetle" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="violinBeetle" value="ViolinBeetle">
+                    <label for="violinBeetle">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Walker Cicada</h3>
+                <p>This insect can be found on hardwood and cedar trees.</p>
+                <img src="images/insects/Walker_Cicada_NH.png" alt="walker Cicada acnh" class="creatureImg">
+                <img src="images/insects/walkerCicadaChart.png" alt="availability chart for Walker Cicada" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="walkerCicada" value="WalkerCicada">
+                    <label for="walkerCicada">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Walking Leaf</h3>
+                <p>This insect will lay near a tree and will look like a dropped item. As you approach it, it wiggles and turns into the insect.</p>
+                <img src="images/insects/Walking_Leaf_NH.png" alt="walking Leaf acnh" class="creatureImg">
+                <img src="images/insects/walkingLeafChart.png" alt="availability chart for Walking Leaf" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="walkingLeaf" value="WalkingLeaf">
+                    <label for="walkingLeaf">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Walking Stick</h3>
+                <p>This insect can be found on any kind of tree.</p>
+                <img src="images/insects/Walking_Stick_NH.png" alt="walking Stick acnh" class="creatureImg">
+                <img src="images/insects/walkingStickChart.png" alt="availability chart for Walking Stick" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="walkingStick" value="WalkingStick">
+                    <label for="walkingStick">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Wasp</h3>
+                <p>Can be found by shaking non-fruit hardwood or cedar trees. If you get stung, your villagers will go on and on about how ugly you look. The sting can be fixed with medicine.</p>
+                <img src="images/insects/Wasp_NH.png" alt="wasp acnh" class="creatureImg">
+                <img src="images/insects/waspChart.png" alt="availability chart for Wasp" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="wasp" value="Wasp">
+                    <label for="wasp">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Wharf Roach</h3>
+                <p>This insect is found on beach rocks.</p>
+                <img src="images/insects/Wharf_Roach_NH.png" alt="wharf Roach acnh" class="creatureImg">
+                <img src="images/insects/wharfRoachChart.png" alt="availability chart for Wharf Roach" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="wharfRoach" value="WharfRoach">
+                    <label for="wharfRoach">Mark as caught</label>
+                </div>
+            </div>
+            <div class="insect">
+                <h3>Yellow Butterfly</h3>
+                <p>This butterfly will be found flying all around your island.</p>
+                <img src="images/insects/Yellow_Butterfly_NH.png" alt="yellow Butterfly acnh" class="creatureImg">
+                <img src="images/insects/yellowButterflyChart.png" alt="availability chart for Yellow Butterfly" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="yellowButterfly" value="YellowButterfly">
+                    <label for="yellowButterfly">Mark as caught</label>
+                </div>
+            </div>
+            <div class="warning noResultsHidden">
+                <p>No results found. Please try another search.</p>
+            </div>
+        </div>
+        <footer>
+            <p><small>&copy;2024</small></p>
+            <p><small>For educational purposes only</small></p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Animal Crossing New Horizons Creature Guide | Sea Creatures </title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="images/favicon.ico">
+        <script 
+        src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous"></script>
+        <script src="animals-script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img src="images/acnh-leaf.png" alt="animal crossing leaf icon" width="50px"></a>
+            <a href="index.html"><h1>Creature Guide</h1></a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="fish.html">Fish</a>
+                    </li>
+                    <li>
+                        <a href="insects.html">Insects</a>
+                    </li>
+                    <li>
+                        <a href="sea.html">Sea Creatures</a>
+                    </li>
+                </ul>
+                <a href="#top">^</a>
+            </nav>
+        </header>
+        <h2>Search all available sea creatures</h2>
+        <div class="search">
+            <label for="site-search">Find a sea creature</label>
+            <input type="search" id="site-search" placeholder="Find a sea creature">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search searchIcon" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#C4D9A9" fill="#F5F5DC" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="10" cy="10" r="7" />
+                <line x1="21" y1="21" x2="15" y2="15" />
+            </svg>
+        </div>
+        <div id="sea-cont">
+            <!-- Creature images from https://nookipedia.com/ -->
+            <div class="seaCreat">
+                <h3>Abalone</h3>
+                <p>Abalone has a medium shadow with normal bubbles.</p>
+                <img src="images/seaCreatures/Abalone_NH.png" alt="Abalone acnh" class="creatureImg">
+                <img src="images/seaCreatures/abaloneChart.png" alt="Availability chart for Abalone" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="abalone" value="Abalone">
+                    <label for="abalone">Mark as caught</label>
+                </div>
+            </div>
+            <div class="seaCreat">
+                <h3>Acorn Barnacle</h3>
+                <p>Acorn barnacle can be found year-round at any time. It has a small shadow and few bubbles.</p>
+                <img src="images/seaCreatures/Acorn_Barnacle_NH.png" alt="Acorn barnacle acnh" class="creatureImg">
+                <img src="images/seaCreatures/acornBarnacle.png" alt="availability chart for acorn barnacle" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="acornBarnacle" value="acornBarnacle">
+                    <label for="acornBarnacle">Mark as caught</label>
+                </div>
+            </div>
+            <div class="seaCreat">
+                <h3>Chambered Nautilus</h3>
+                <p>Chambered nautilus has a large shadow with normal bubbles.</p>
+                <img src="images/seaCreatures/Chambered_Nautilus_NH.png" alt="Chambered nautilus acnh" class="creatureImg">
+                
+                <img src="images/seaCreatures/chamberedNautilusChart.png" alt="availability chart for chambered nautilus" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="chamberedNautilus" value="chamberedNautilus">
+                    <label for="chamberedNautilus">Mark as caught</label>
+                </div>
+            </div>
+            <div class="seaCreat">
+                <h3>Dungeness Crab</h3>
+                <p>Dungeness crab has a large shadow with normal bubbles.</p>
+                <img src="images/seaCreatures/Dungeness_Crab_NH.png" alt="dungeness crab acnh" class="creatureImg">
+                <img src="images/seaCreatures/dungenessCrabChart.png" alt="Availability chart for Dungeness Crab" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="dungenessCrab" value="dungenessCrab">
+                    <label for="dungenessCrab">Mark as caught</label>
+                </div>
+            </div>
+            <div class="seaCreat">
+                <h3>Firefly Squid</h3>
+                <p>Firefly squid has a small shadow with few bubbles.</p>
+                <img src="images/seaCreatures/Firefly_Squid_NH.png" alt="firefly squid acnh" class="creatureImg">
+                <img src="images/seaCreatures/fireflySquidChart.png" alt="Availability chart for Firefly Squid" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="fireflySquid" value="fireflySquid">
+                    <label for="fireflySquid">Mark as caught</label>
+                </div>
+            </div>
+            <div class="seaCreat">
+                <h3>Flatworm</h3>
+                <p>The flatworm has a small shadow and few bubbles.</p>
+                <img src="images/seaCreatures/Flatworm_NH.png" alt="flatworm acnh" class="creatureImg">
+                <img src="images/seaCreatures/flatwormChart.png" alt="Availability chart for Flatworm" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="flatworm" value="flatworm">
+                    <label for="flatworm">Mark as caught</label>
+                </div>
+            </div>
+            <div class="seaCreat">
+                <h3>Gazami Crab</h3>
+                <p>Gazami crab has a large shadow with normal bubbles.</p>
+                <img src="images/seaCreatures/Gazami_Crab_NH.png" alt="gazami crab acnh" class="creatureImg">
+                <img src="images/seaCreatures/gazamiCrabChart.png" alt="Availability chart for Gazami Crab" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="gazamiCrab" value="gazamiCrab">
+                    <label for="gazamiCrab">Mark as caught</label>
+                </div>
+            </div>
+            <div class="seaCreat">
+                <h3>Giant Isopod</h3>
+                <p>The giant isopod has a large shadow and normal bubbles.</p>
+                <img src="images/seaCreatures/Giant_Isopod_NH.png" alt="giant isopod acnh" class="creatureImg">
+                <img src="images/seaCreatures/giantIsopodChart.png" alt="Availability chart for Giant Isopod" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="giantIsopod" value="giantIsopod">
+                    <label for="giantIsopod">Mark as caught</label>
+                </div>
+            </div>
+            <div class="seaCreat">
+                <h3>Gigas Giant Clam</h3>
+                <p>Gigas giant clam has a large shadow with many bubbles. This creature is very quick.</p>
+                <img src="images/seaCreatures/Gigas_Giant_Clam_NH.png" alt="gigas giant clam" class="creatureImg">
+                <img src="images/seaCreatures/gigasGiantClamChart.png" alt="Availability chart for Gigas Giant Clam" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="gigasGiantClam" value="gigasGiantClam">
+                    <label for="gigasGiantClam">Mark as caught</label>
+                </div>
+            </div>
+            <div class="seaCreat">
+                <h3>Horseshoe Crab</h3>
+                <p>The horseshoe crab has a large shadow and normal bubbles.</p>
+                <img src="images/seaCreatures/Horseshoe_Crab_NH.png" alt="horseshoe crab acnh" class="creatureImg">
+                <img src="images/seaCreatures/horseshoeCrabChart.png" alt="Availability chart for Horseshoe Crab" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="horseshoeCrab" value="horseshoeCrab">
+                    <label for="horseshoeCrab">Mark as caught</label>
+                </div>
+            </div>
+            <div class="seaCreat">
+                <h3>Lobster</h3>
+                <p>Lobster has a large shadow with many bubbles.</p>
+                <img src="images/seaCreatures/Lobster_NH.png" alt="lobster acnh" class="creatureImg">
+                <img src="images/seaCreatures/lobsterChart.png" alt="Availability chart for Lobster" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="lobster" value="lobster">
+                    <label for="lobster">Mark as caught</label>
+                </div>
+            </div>
+            <div class="seaCreat">
+                <h3>Mantis Shrimp</h3>
+                <p>Mantis shrimp can be found year-round from 4pm-9pm. It has a medium shadow and few bubbles.</p>
+                <img src="images/seaCreatures/Mantis_Shrimp_NH.png" alt="mantis shrimp acnh" class="creatureImg">
+                <img src="images/seaCreatures/mantisShrimpChart.png" alt="Availability chart for Mantis Shrimp" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="mantisShrimp" value="mantisShrimp">
+                    <label for="mantisShrimp">Mark as caught</label>
+                </div>
+            </div>
+            <div class="seaCreat">
+                <h3>Moon Jellyfish</h3>
+                <p>Moon jellyfish has a medium shadow with few bubbles.</p>
+                <img src="images/seaCreatures/Moon_Jellyfish_NH.png" alt="moon jellyfish acnh" class="creatureImg">
+                <img src="images/seaCreatures/moonJellyfishChart.png" alt="Availability chart for Moon Jellyfish" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="moonJellyfish" value="moonJellyfish">
+                    <label for="moonJellyfish">Mark as caught</label>
+                </div>
+            </div>
+            <div class="seaCreat">
+                <h3>Mussel</h3>
+                <p>Mussel has a medium shadow with few bubbles.</p>
+                <img src="images/seaCreatures/Mussel_NH.png" alt="mussel from acnh" class="creatureImg">
+                <img src="images/seaCreatures/mussellChart.png" alt="Availability chart for Mussel" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="mussel" value="Abalone">
+                    <label for="mussel">Mark as caught</label>
+                </div>
+            </div>
+            <div class="seaCreat">
+                <h3>Octopus</h3>
+                <p>Octopus can be found year round. It has a large shadow and normal bubbles.</p>
+                <img src="images/seaCreatures/Octopus_NH.png" alt="octupus acnh" class="creatureImg">
+                <img src="images/seaCreatures/octopusChart.png" alt="Availability chart for Octopus" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="octopus" value="octopus">
+                    <label for="octopus">Mark as caught</label>
+                </div>
+            </div>
+            <div class="seaCreat">
+                <h3>Oyster</h3>
+                <p>Oyster has a medium shadow with few bubbles.</p>
+                <img src="images/seaCreatures/Oyster_NH.png" alt="oyster acnh" class="creatureImg">
+                <img src="images/seaCreatures/oysterChart.png" alt="Availability chart for Oyster" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="oyster acnh" value="oyster acnh">
+                    <label for="oyster acnh">Mark as caught</label>
+                </div>
+            </div>
+            <div class="seaCreat">
+                <h3>Pearl Oyster</h3>
+                <p>Pearl oyster can be found year-round at any time and has a medium shadow with few bubbles.</p>
+                <img src="images/seaCreatures/Pearl_Oyster_NH.png" alt="pearl oyster acnh" class="creatureImg">
+                <img src="images/seaCreatures/pearlOysterChart.png" alt="Availability chart for Pearl Oyster" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="pearlOyster" value="pearlOyster">
+                    <label for="pearlOyster">Mark as caught</label>
+                </div>
+            </div>
+            <div class="seaCreat">
+                <h3>Red King Crab</h3>
+                <p>Red king crab has a large shadow and normal bubbles.</p>
+                <img src="images/seaCreatures/Red_King_Crab_NH.png" alt="red king crab" class="creatureImg">
+                <img src="images/seaCreatures/redKingCrabChart.png" alt="Availability chart for Red King Crab" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="redKingCrab" value="redKingCrab">
+                    <label for="redKingCrab">Mark as caught</label>
+                </div>
+            </div>
+            <div class="seaCreat">
+                <h3>Scallop</h3>
+                <p>Scallops can be found year-round at any time. They have a large shadow with normal bubbles. Hint: it's nice to share with others.</p>
+                <img src="images/seaCreatures/Scallop_NH.png" alt="scallop acnh" class="creatureImg">
+                <img src="images/seaCreatures/scallopChart.png" alt="Availability chart for Scallop" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="scallop" value="scallop">
+                    <label for="scallop">Mark as caught</label>
+                </div>
+            </div>
+            <div class="seaCreat">
+                <h3>Sea Anemone</h3>
+                <p>Sea anemone can be found year-round at any time and has a large shadow with many bubbles.</p>
+                <img src="images/seaCreatures/Sea_Anemone_NH.png" alt="sea anemone acnh" class="creatureImg">
+                <img src="images/seaCreatures/seaAnemoneChart.png" alt="Availability chart for Sea Anemone" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="seaAnemone" value="seaAnemone">
+                    <label for="seaAnemone">Mark as caught</label>
+                </div>
+            </div>
+            <div class="seaCreat">
+                <h3>Sea Cucumber</h3>
+                <p>Sea cucumber has a large shadow with normal bubbles.</p>
+                <img src="images/seaCreatures/Sea_Cucumber_NH.png" alt="sea cucumber acnh" class="creatureImg">
+                <img src="images/seaCreatures/seaCucumberChart.png" alt="Availability chart for Sea Cucumber" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="seaCucumber" value="seaCucumber">
+                    <label for="seaCucumber">Mark as caught</label>
+                </div>
+            </div>
+            <div class="seaCreat">
+                <h3>Sea Grapes</h3>
+                <p>Sea grapes have a medium shadow with few bubbles.</p>
+                <img src="images/seaCreatures/Sea_Grapes_NH.png" alt="sea grapes acnh" class="creatureImg">
+                <img src="images/seaCreatures/seaGrapesChart.png" alt="Availability chart for Sea Grapes" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="seaGrapes" value="seaGrapes">
+                    <label for="seaGrapes">Mark as caught</label>
+                </div>
+            </div>
+            <div class="seaCreat">
+                <h3>Sea Pig</h3>
+                <p>Sea pig has a medium shadow with few bubbles.</p>
+                <img src="images/seaCreatures/Sea_Pig_NH.png" alt="sea pig acnh" class="creatureImg">
+                <img src="images/seaCreatures/seaPigChart.png" alt="Availability chart for Sea Pig" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="seaPig" value="seaPig">
+                    <label for="seaPig">Mark as caught</label>
+                </div>
+            </div>
+            <div class="seaCreat">
+                <h3>Sea Pineapple</h3>
+                <p>The sea pineapple has a medium shadow and few bubbles.</p>
+                <img src="images/seaCreatures/Sea_Pineapple_NH.png" alt="sea pineapple acnh" class="creatureImg">
+                <img src="images/seaCreatures/seaPineappleChart.png" alt="Availability chart for Sea Pineapple" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="seaPineapple" value="seaPineapple">
+                    <label for="seaPineapple">Mark as caught</label>
+                </div>
+            </div>
+            <div class="seaCreat">
+                <h3>Sea Slug</h3>
+                <p>Sea slug has a small shadow and few bubbles. This creature can be found year-round at any time.</p>
+                <img src="images/seaCreatures/Sea_Slug_NH.png" alt="sea slug" class="creatureImg">
+                <img src="images/seaCreatures/seaSlugChart.png" alt="Availability chart for Sea Slug" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="seaSlug" value="seaSlug">
+                    <label for="seaSlug">Mark as caught</label>
+                </div>
+            </div>
+            <div class="seaCreat">
+                <h3>Sea Star</h3>
+                <p>Sea star can be found year-round at any time. It has a medium shadow with few bubbles.</p>
+                <img src="images/seaCreatures/Sea_Star_NH.png" alt="sea star acnh" class="creatureImg">
+                <img src="images/seaCreatures/seaStarChart.png" alt="Availability chart for Sea Star" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="seaStar" value="seaStar">
+                    <label for="seaStar">Mark as caught</label>
+                </div>
+            </div>
+            <div class="seaCreat">
+                <h3>Sea Urchin</h3>
+                <p>Sea urchin has a large shadow with normal bubbles.</p>
+                <img src="images/seaCreatures/Sea_Urchin_NH.png" alt="sea urchin acnh" class="creatureImg">
+                <img src="images/seaCreatures/seaUrchinChart.png" alt="Availability chart for Sea Urchin" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="seaUrchin" value="seaUrchin">
+                    <label for="seaUrchin">Mark as caught</label>
+                </div>
+            </div>
+            <div class="seaCreat">
+                <h3>Seaweed</h3>
+                <p>Seaweed has a large shadow with many bubbles.</p>
+                <img src="images/seaCreatures/Seaweed_NH.png" alt="seaweed acnh" class="creatureImg">
+                <img src="images/seaCreatures/seaweedChart.png" alt="Availability chart for Seaweed" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="seaweed" value="seaweed">
+                    <label for="seaweed">Mark as caught</label>
+                </div>
+            </div>
+            <div class="seaCreat">
+                <h3>Slate Pencil Urchin</h3>
+                <p>Slate Pencil Urchin has a large shadow with many bubbles.</p>
+                <img src="images/seaCreatures/Slate_Pencil_Urchin_NH.png" alt="slate pencil urchin acnh" class="creatureImg">
+                <img src="images/seaCreatures/slatePencilUrchinChart.png" alt="Availability chart for Slate Pencil Urchin" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="slatePencilUrchin" value="slatePencilUrchin">
+                    <label for="slatePencilUrchin">Mark as caught</label>
+                </div>
+            </div>
+            <div class="seaCreat">
+                <h3>Snow Crab</h3>
+                <p>Snow crab has a large shadow and normal bubbles.</p>
+                <img src="images/seaCreatures/Snow_Crab_NH.png" alt="snow crab acnh" class="creatureImg">
+                <img src="images/seaCreatures/snowCrabChart.png" alt="Availability chart for Snow Crab" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="snowCrab" value="snowCrab">
+                    <label for="snowCrab">Mark as caught</label>
+                </div>
+            </div>
+            <div class="seaCreat">
+                <h3>Spider Crab</h3>
+                <p>Spider crab has a large shadow and many bubbles.</p>
+                <img src="images/seaCreatures/Spider_Crab_NH.png" alt="spider crab acnh" class="creatureImg">
+                <img src="images/seaCreatures/spiderCrabChart.png" alt="Availability chart for Spider Crab" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="spiderCrab" value="spiderCrab">
+                    <label for="spiderCrab">Mark as caught</label>
+                </div>
+            </div>
+            <div class="seaCreat">
+                <h3>Spiny Lobster</h3>
+                <p>Spiny lobster has a large shadow and many bubbles.</p>
+                <img src="images/seaCreatures/Spiny_Lobster_NH.png" alt="spiny lobster acnh" class="creatureImg">
+                <img src="images/seaCreatures/spinyLobsterChart.png" alt="Availability chart for Spiny Lobster" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="spinyLobster" value="spinyLobster">
+                    <label for="spinyLobster">Mark as caught</label>
+                </div>
+            </div>
+            <div class="seaCreat">
+                <h3>Spotted Garden Eel</h3>
+                <p>The spotted garden eel has a medium shadow and few bubbles.</p>
+                <img src="images/seaCreatures/Spotted_Garden_Eel_NH.png" alt="spotted garden eel acnh" class="creatureImg">
+                <img src="images/seaCreatures/spottedGardenEelChart.png" alt="Availability chart for Spotted Garden Eel" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="spottedGardenEel" value="spottedGardenEel">
+                    <label for="spottedGardenEel">Mark as caught</label>
+                </div>
+            </div>
+            <div class="seaCreat">
+                <h3>Sweet Shrimp</h3>
+                <p>Sweet shrimp has a medium shadow and few bubbles.</p>
+                <img src="images/seaCreatures/Sweet_Shrimp_NH.png" alt="sweet shrimp acnh" class="creatureImg">
+                <img src="images/seaCreatures/sweetShrimpChart.png" alt="Availability chart for Sweet Shrimp" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="sweetShrimp" value="sweetShrimp">
+                    <label for="sweetShrimp">Mark as caught</label>
+                </div>
+            </div>
+            <div class="seaCreat">
+                <h3>Tiger Prawn</h3>
+                <p>Tiger prawn has a medium shadow and few bubbles.</p>
+                <img src="images/seaCreatures/Tiger_Prawn_NH.png" alt="tiger prawn acnh" class="creatureImg">
+                <img src="images/seaCreatures/tigerPrawnChart.png" alt="Availability chart for Tiger Prawn" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="tigerPrawn" value="tigerPrawn">
+                    <label for="tigerPrawn">Mark as caught</label>
+                </div>
+            </div>
+            <div class="seaCreat">
+                <h3>Turban Shell</h3>
+                <p>Turban shell has a medium shadow with few bubbles.</p>
+                <img src="images/seaCreatures/Turban_Shell_NH.png" alt="turban shell acnh" class="creatureImg">
+                <img src="images/seaCreatures/turbanShellChart.png" alt="Availability chart for Turban Shell" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="turbanShell" value="turbanShell">
+                    <label for="turbanShell">Mark as caught</label>
+                </div>
+            </div>
+            <div class="seaCreat">
+                <h3>Umbrella Octopus</h3>
+                <p>Umbrella octopus has a medium shadow few bubbles.</p>
+                <img src="images/seaCreatures/Umbrella_Octopus_NH.png" alt="umbrella octopus acnh" class="creatureImg">
+                <img src="images/seaCreatures/umbrellaOctopusChart.png" alt="Availability chart for Umbrella Octopus" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="umbrellaOctopus" value="umbrellaOctopus">
+                    <label for="umbrellaOctopus">Mark as caught</label>
+                </div>
+            </div>
+            <div class="seaCreat">
+                <h3>Vampire Squid</h3>
+                <p>Vampire squid has a large shadow with normal bubbles.</p>
+                <img src="images/seaCreatures/Vampire_Squid_NH.png" alt="vampire squid acnh" class="creatureImg">
+                <img src="images/seaCreatures/vampireSquidChart.png" alt="Availability chart for Vampire Squid" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="vampireSquid" value="vampireSquid">
+                    <label for="vampireSquid">Mark as caught</label>
+                </div>
+            </div>
+            <div class="seaCreat">
+                <h3>Venus Flower Basket</h3>
+                <p>The venus flower basket has a medium shadow and normal bubbles.</p>
+                <img src="images/seaCreatures/Venus'_Flower_Basket_NH.png" alt="venus flower basket acnh" class="creatureImg">
+                <img src="images/seaCreatures/venusFlowerBasketChart.png" alt="Availability chart for Venus Flower Basket" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="venusFlowerBasket" value="venusFlowerBasket">
+                    <label for="venusFlowerBasket">Mark as caught</label>
+                </div>
+            </div>
+            <div class="seaCreat">
+                <h3>Whelk</h3>
+                <p>Whelk can be found year round at any time. They have a medium shadow and few bubbles.</p>
+                <img src="images/seaCreatures/Whelk_NH.png" alt="whelk acnh" class="creatureImg">
+                <img src="images/seaCreatures/whelkChart.png" alt="Availability chart for Whelk" class="availabilityCh">
+                <div class="check">
+                    <input type="checkbox" id="whelk" value="whelk">
+                    <label for="whelk">Mark as caught</label>
+                </div>
+            </div>
+            <div class="warning noResultsHidden">
+                <p>No results found. Please try another search.</p>
+            </div>
+        </div>
+        <footer>
+            <p><small>&copy;2024</small></p>
+            <p><small>For educational purposes only</small></p>
+        </footer>
+    </body>
+</html>

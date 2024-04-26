@@ -1,0 +1,563 @@
+/* custom fonts */
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+/* CSS Reset from https://meyerweb.com/eric/tools/css/reset/ */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END OF CSS RESET */
+
+/* Colors
+Blue-green: #74E0AA
+Green: #BEE893
+Yellow: #FFF563
+Brown: #786951
+Sage green: #C4D9A9
+*/
+
+/* html {
+    background-color: #C4D9A9;
+    background-image: url(images/acnh-bg.png);
+} */
+
+
+
+body {
+    max-width: 100%;
+    background-color: #C4D9A9;
+    background-image: url(images/acnh-bg.png);
+    margin: 0 auto;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-family: 'Irish Grover', serif;
+    color: #C4D9A9;
+    /* color: #FFF563; */
+    /* color: #FBFEB2; */
+    /* font-weight: 400;
+    font-style: normal; */
+}
+h2 {
+    font-size: 1.5em;
+
+}
+
+h2:first-of-type {
+    display: none;
+}
+
+#fish-cont, #insect-cont, #sea-cont {
+    max-width: 95%;
+    margin: auto;
+}
+
+h3 {
+    font-size: 1.2em;
+    text-align: center;
+}
+h4 {
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+header {
+    display: grid;
+    /* background-color: #DBBF9E; */
+    background-color: #786951;
+    /* background-color: #017c74; */
+    /* background-color: #9e8364; */
+    
+    /* or #74E0AA #DBBF9E #786951 or blue 017c74 or brown 9e8364*/
+    /* padding: 35px 0px; */
+    justify-content: start;
+}
+header a {
+    text-decoration-line: none;
+}
+
+nav a {
+    font-size: 1rem;
+    text-decoration-line: none;
+    padding: 8px;
+    display: inline;
+    /* background-color: #FBFEB2; */
+    /* background-color: #FFF563; */
+    background-color: #C4D9A9;
+    color: #786951;
+    border-radius: 4px;
+
+}
+
+nav {
+    display: grid;
+    /* width: 414px; */
+    width: 360px;
+    /* justify-content: end; */
+    /* align-items: center; */
+}
+nav li {
+    display: inline-block;
+}
+nav a:hover {
+    color: #786951;
+    /* color: #FFF563; */
+    /* background-color: #DBBF9E; */
+    background-color: #FFF563;
+    transition-property: background-color, color;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+.availabilityCh {
+    /* width: 350px; */
+    width: 320px;
+    margin-left: 15px;
+}
+
+.creatureImg {
+    width: 30%;
+    margin: auto;
+    margin-top: 10px;
+    /* margin-left: 10px; */
+    /* justify-self: center; */
+}
+
+.check {
+    align-items: center;
+    margin: auto;
+}
+
+/* Search styling */
+.icon-tabler-search {
+    padding: 0 5px 2px;
+    margin: 15px 0;
+    /* background-color: #EB5428;
+    border: 1px solid #EB5428; */
+}
+
+#site-search:focus {
+    outline: solid 2px #C4D9A9;
+}
+.search svg:hover {
+    cursor: pointer;
+}
+
+label[for="site-search"] {
+    display:none;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: #F5F5DC;
+}
+
+footer {
+    background-color: #786951;
+    text-align: center;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.noResultsHidden {
+    display: none !important;
+}
+
+.warning {
+    grid-column: span 2;
+}
+
+[href="#top"] {
+    position:fixed;
+    bottom:0px;
+    right:0px;
+    border-radius:10px 0 0px 0px;
+    background-color: #786951;
+    color: #C4D9A9;
+    width: 30px;
+    text-align: center;
+  }
+
+/* Loading Wheel CSS generated from https://loading.io/css/ */
+.lds-dual-ring {
+ /* change color here */
+    color: #1c4c5b
+}
+.lds-dual-ring, .lds-dual-ring:after {
+    box-sizing: border-box;
+}
+.lds-dual-ring {
+    display: block;
+    margin: 20px auto 10px auto;
+    width: 80px;
+    height: 80px;
+}
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6.4px solid currentColor;
+    border-color: currentColor transparent currentColor transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }  
+}
+
+/* API Styling */
+.insect-cont, .fish-cont, .sea-cont {
+    border: 2px solid #DBBF9E;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border: 2px solid #DBBF9E;
+    border-radius: 10px;
+    background-color: #F5F5DC;
+    max-width: 95%;
+    margin: 20px auto 20px;
+}
+.insect-cont img, .fish-cont img, .sea-cont img {
+    margin: 0 auto;
+}
+.availCreatP {
+    text-align: center;
+}
+
+/* Widget Datepicker styling */
+#date {
+    display: flex;
+    margin-left: 20px;
+    background-color: #F5F5DC;
+    margin: auto;
+    padding: 15px 0 15px 15px;
+}
+#date label {
+    padding-right: 10px;
+}
+input[type=submit] {
+    margin-left: 10px;
+}
+
+/* MOBILE */
+@media screen and (min-width: 360px){
+    body{
+        max-width: 360px;
+        max-width: 100%;
+        line-height: 1.5;
+    }
+
+    #sea-cont > div, #insect-cont > div {
+        display: grid;
+        grid-auto-rows: auto;
+        grid-template-columns: 1fr;
+        padding-bottom: 10px;
+        margin-top: 20px;
+        padding-top: 10px;
+        border: 2px solid #DBBF9E;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        background-color: #F5F5DC;
+    }
+
+    #fish-cont > section > div {
+        display: grid;
+        grid-auto-rows: auto;
+        grid-template-columns: 1fr;
+        padding-bottom: 10px;
+        margin-top: 0;
+        padding-top: 10px;
+        border: 2px solid #DBBF9E;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        background-color: #F5F5DC;
+    }
+    /* #fish-cont div {
+        margin-top: 0;
+    } */
+    #fish-cont section h2 {
+        font-weight: bold;
+        display: block;
+        padding: 15px 0 5px 10px;
+        margin-bottom: 0;
+        margin-top: 10px;
+        grid-column: span 2;
+    }
+
+    /* .creature-img {
+        order: 1;
+        margin-top: 50px;
+    } */
+    #sea-cont div p, #insect-cont div p {
+        order: 2;
+        margin: 10px auto;
+        padding: 0 5px 10px 5px;
+        text-align: center;
+        /* max-width: 50%; */
+        /* position: relative;
+        top: -20px;
+        left: 100px; */
+    }
+    #fish-cont div p {
+        order: 2;
+        margin: 10px auto;
+        padding-bottom: 10px;
+        text-align: center;
+        padding: 5px;
+        /* max-width: 50%;
+        position: relative;
+        top: -20px;
+        left: 100px; */
+    }
+    /* #pond h2 {
+        padding: 20px 0 5px 10px;
+    } */
+    .availabilityCh {
+        order: 4;
+        margin: 10px auto;
+    }
+    .check {
+        order: 5;
+        margin-top: 10px
+        /* border-style: none; */
+    }
+    .search {
+        grid-row: 1;
+        grid-column: 2;
+    }
+    #site-search {
+        margin-left: 30%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    h1 {
+        display: none;
+    }
+    header {
+        padding: 15px 0;
+    }
+    header img {
+        margin-left: 3%;
+    }
+    /* nav {
+        grid-column: 1;
+        grid-row: 1;
+        position: absolute;
+    } */
+    /* header img {
+        grid-row: 1;
+    } */
+    nav ul {
+        /* margin-left: 40px; */
+        position: absolute;
+        top: 25px;
+        right: 12%;
+    }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    /* .search {
+        grid-row: unset;
+        position: absolute;
+        z-index: 20;
+        top: 0;
+        left: 50%;
+    } */
+    #site-search {
+        margin: 20px 0 0 auto;
+        margin-left: 30%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    h1 {
+        display: block;
+        position: relative;
+        top: -55px;
+        left: 20%;
+
+    }
+    header {
+        padding-top: 15px;
+    }
+
+    #fish-cont div p, #insect-cont div p, #sea-cont div p {
+        padding: 10px 0;
+    }
+    .availabilityCh {
+        width: 500px;
+        margin: auto;
+    }
+    #sea-cont .creatureImg {
+        width: 10%;
+    }
+
+    /* API Styling */
+    #availCreat, #availableFish, #availableBugs, #availableSeaCreatures {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .insect-cont, .fish-cont, .sea-cont {
+        width: 100%;
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1280px) {
+    h1 {
+        display: block;
+        position: absolute;
+        top: 1%;
+        left: 10%;
+    }
+    header{
+        /* width: 1280px; */
+        padding-bottom: 30px;
+    }
+    nav ul {
+        display: inline;
+    }
+    nav li {
+        display: inline-block;
+        /* padding: 0px 30px 15px 0px; */
+    }
+    .search {
+        margin: auto;
+    }
+    /* #site-search {
+        margin: 20px auto auto auto;
+    } */
+    .icon-tabler-search {
+        padding: 0 5px 1px;
+    }
+    #sea-cont .creatureImg, #insect-cont .creatureImg {
+        width: 70px;
+    }
+    #fish-cont .creatureImg {
+        width: 70%;
+    }
+    #sea-cont, #insect-cont {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-around;
+        grid-gap: 10px;
+    }
+    .warning {
+        display: flex !important;
+        /* display: grid;
+        grid-template-columns: 1fr; */
+    }
+    .noResultsHidden {
+        display: none !important;
+    }
+    
+    #sea-cont div, #insect-cont div {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+    }
+    #sea-cont div p, #insect-cont div p {
+        padding: 20px;
+    }
+    #fish-cont {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: space-around;
+    }
+    #pond, #river, #sea {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-around;
+        grid-gap: 10px;
+    }
+    #fish-cont > section > div {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+    }
+    #fish-cont div p, #sea-cont div p, #insect-cont div p{
+        order: initial;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+    /* body, header {
+        max-width: 1280px;
+    } */
+    nav a {
+        display: block;
+        width: 135px;
+        text-align: center;
+    }
+    #availCreat, #availableFish, #availableBugs, #availableSeaCreatures {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .insect-cont, .fish-cont, .sea-cont {
+        width: 100%;
+    }
+}

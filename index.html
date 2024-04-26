@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Crossing New Horizons Creature Guide | Home </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="jquery-ui-1.13.2.custom/jquery-ui.css">
+    <link rel="stylesheet" href="jquery-ui-1.13.2.custom/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jquery-ui-1.13.2.custom/jquery-ui.theme.css">
+    <link rel="icon" href="images/favicon.ico">
+    <script 
+        src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c="            
+        crossorigin="anonymous"></script> -->
+    <script src="jquery-ui-1.13.2.custom/jquery-ui.js"></script>
+    <script src="index-script.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/acnh-leaf.png" alt="animal crossing leaf icon" width="50px"></a>
+        <a href="index.html"><h1>Creature Guide</h1></a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="fish.html">Fish</a>
+                </li>
+                <li>
+                    <a href="insects.html">Insects</a>
+                </li>
+                <li>
+                    <a href="sea.html">Sea Creatures</a>
+                </li>
+            </ul>
+            <a href="#top">^</a>
+        </nav>
+    </header>
+    <h2>Creatures available</h2>
+    <!-- <h3>Choose a Date</h3> -->
+    <section id="date" class="subsec">
+        <label for="dateinput" class="sr-only">Choose a Date:  </label>
+        <input type="text" id="dateinput" placeholder="Click to select date">
+        <div id="datepicker"></div>
+        <p id="dateDisplay"></p>
+        <input type="submit">
+    </section>
+    <section>
+        <h4>Available Fish</h4>
+        <div id="availableFish">
+    
+        </div>
+    </section>
+    <section>
+        <h4>Insects</h4>
+        <div id="availableBugs">
+        
+        </div>
+    </section>
+    <section>
+        <h4>Sea Creatures</h4>
+        <div id="availableSeaCreatures">
+
+        </div>
+    </section>
+    
+    <!-- Loading wheel generated from https://loading.io/css/ -->
+    <div class="hidden lds-dual-ring"></div> 
+    <h3 class="hidden loading-results">Loading available creatures...</h3>
+    <footer>
+        <p><small>&copy;2024</small></p>
+        <p><small>For educational purposes only</small></p>
+    </footer>
+</body>
+</html>
